@@ -24,3 +24,6 @@ Kontakt koji je trenutačno postavljen:
 Napomena:
 Mapa ne sadrži node_modules ni privremene razvojne datoteke. Paketi se
 automatski ponovno instaliraju naredbom npm install.
+
+
+cloudflare reset
