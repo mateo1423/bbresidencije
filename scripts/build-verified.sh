@@ -25,4 +25,9 @@ timeout \
   "${SITES_BUILD_TIMEOUT:-3m}" \
   "${vinext}" build
 
+echo "Packaging Sites manifest..."
+mkdir -p "${SITES_PROJECT_ROOT}/dist/.openai"
+cp "${SITES_PROJECT_ROOT}/.openai/hosting.json" \
+  "${SITES_PROJECT_ROOT}/dist/.openai/hosting.json"
+
 "${script_dir}/validate-artifact.sh"
