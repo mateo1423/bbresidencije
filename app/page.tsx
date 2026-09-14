@@ -15,6 +15,34 @@ export default function Home(){
   <section className="intro" id="uvod"><Label>BB Residencija</Label><div className="introGrid"><h2>Kuće s karakterom.<br/>Stvorene za <em>vaš ritam.</em></h2><div><p>Ne crtamo samo kvadrate. Oblikujemo odnos svjetla, pogleda, privatnosti i svakodnevice — tako da kuća prirodno pripada vama i mjestu na kojem nastaje.</p><a href="#pristup" className="lineLink">Naš pristup <b>↗</b></a></div></div></section>
   <section className="projects" id="koncepti"><div className="secTop"><Label>Odabrani koncepti</Label><p>Tri autorska odgovora na mediteranski način života.</p></div><div className="showcase"><div className="photo" key={h.n}><img src={h.img} alt={h.name}/><span>{h.n}</span></div><aside><small>{h.kind}</small><h3>{h.name}</h3><div className="facts"><span>{h.area}</span><span>{h.place}</span></div><p>{h.desc}</p><a className="round" href="#kontakt">↗</a><div className="controls"><button onClick={()=>go(-1)}>←</button><small>{i+1} / {homes.length}</small><button onClick={()=>go(1)}>→</button></div></aside></div></section>
   <section className="offer" id="ponuda"><div className="offerHead"><div><Label>Aktualna ponuda</Label><h2>BB Residencija<br/><em>Pula</em></h2></div><div className="offerIntro"><span>Projekt u pripremi</span><p>Moderna prizemna rezidencija s dvije odvojene stambene jedinice, privatnim vrtovima i natkrivenim terasama. Pristup oba apartmana organiziran je s desne strane parcele.</p><a href="#kontakt" className="lineLink">Zatražite informacije <b>↗</b></a></div></div><div className="offerFacts"><article><small>01</small><strong>2 apartmana</strong><p>Odvojeni ulazi i potpuna privatnost.</p></article><article><small>02</small><strong>184 m²</strong><p>Ukupna tlocrtna površina građevine.</p></article><article><small>03</small><strong>522 m²</strong><p>Ograđena parcela s uređenom okućnicom.</p></article><article><small>04</small><strong>4 parkinga</strong><p>Dva parkirna mjesta po apartmanu.</p></article></div><div className="offerGallery"><figure className="wide"><img src="/ponuda-zrak.png" alt="BB Residencija iz zraka s pristupom s desne strane"/><figcaption><span>01</span>Pogled na cijelu parcelu</figcaption></figure><figure><img src="/ponuda-ulaz.png" alt="Pristup i ulazi u apartmane s desne strane"/><figcaption><span>02</span>Ulazi i parkiranje</figcaption></figure><figure><img src="/ponuda-terase.png" alt="Privatne terase i vrtovi oba apartmana"/><figcaption><span>03</span>Privatne terase</figcaption></figure><figure className="wide"><img src="/ponuda-vrt.png" alt="Vrtna strana projekta BB Residencija"/><figcaption><span>04</span>Vrtna strana rezidencije</figcaption></figure></div><p className="disclaimer">Prikazane slike su idejne arhitektonske vizualizacije. Konačni detalji izvedbe i uređenja mogu se prilagoditi tijekom razrade projekta.</p></section>
+  <section className="brochure" id="brosura">
+  <div>
+    <p className="label">
+      <i></i>
+      PRODAJNA BROŠURA
+    </p>
+
+    <h2>
+      Saznajte više o<br />
+      <em>BB Residenciji.</em>
+    </h2>
+
+    <p>
+      Preuzmite uređivu brošuru s opisom stanova, kvadraturama,
+      tlocrtima, prikazom parcele i informacijama o lokaciji
+      Šišanska cesta 128 u Puli.
+    </p>
+
+    <a
+      href="/BB-Residencija-brosura.docx"
+      download="BB-Residencija-brosura.docx"
+      className="brochureButton"
+    >
+      Preuzmite Word brošuru
+      <span>↓</span>
+    </a>
+  </div>
+</section>
   <section className="approach" id="pristup"><div><Label light>Naš pristup</Label><h2>Manje buke.<br/>Više <em>smisla.</em></h2><p>Svaka odluka mora imati razlog: krov koji štiti ljetnu terasu, kadar koji uokviruje maslinu, kamen koji stari zajedno s kućom.</p></div><div className="principles"><Principle n="01" title="Mjesto prije forme">Sunce, vjetar, pogled i način života oblikuju prvi potez.</Principle><Principle n="02" title="Prirodni materijali">Kamen, drvo i metal biramo zbog trajnosti, dodira i patine.</Principle><Principle n="03" title="Mirna funkcionalnost">Čiste komunikacije i promišljeni detalji daju lakoću svakodnevici.</Principle></div></section>
   <section className="process" id="proces"><Label>Od ideje do doma</Label><div className="procHead"><h2>Jasan proces.<br/><em>Osobni rezultat.</em></h2><p>Vodimo projekt kroz četiri čitljive faze, od prvog razgovora do useljenja.</p></div><div className="steps">{[["01","Razgovor","Vaše navike, želje, lokacija i budžet."],["02","Koncept","Idejno rješenje, prostorni odnosi i karakter kuće."],["03","Razrada","Materijali, tehnički detalji i dokumentacija."],["04","Realizacija","Praćenje izvedbe i dosljednost zamišljenom."]].map(s=><article key={s[0]}><small>{s[0]}</small><h3>{s[1]}</h3><p>{s[2]}</p></article>)}</div></section>
   <section className="contact" id="kontakt"><div><Label light>Zanima vas aktualni projekt?</Label><h2>Javite nam se<br/>za više <em>informacija.</em></h2></div><div className="contactLinks"><a href="mailto:bilobrkivan1@gmail.com">bilobrkivan1@gmail.com <b>↗</b></a><a href="tel:+385913053000">+385 91 305 3000 <b>↗</b></a></div></section>
